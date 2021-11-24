@@ -1,0 +1,25 @@
+<div class="container-fluid py-5" [style.backgroundColor]="background">
+
+
+<!-- {{arrayPosts | json}} -->
+<div class="container">
+  <div class="d-flex justify-content-between">
+    <h2>Lista de Post</h2>
+    <strong>
+      Total {{arrayPosts.length}}
+    </strong>
+  </div>
+
+  <div class="card mb-2" *ngFor="let post of arrayPosts">
+    <div class="card-body">
+      <h5 class="card-title">
+        {{post.title}}
+      </h5>
+      <p class="card-text">
+        {{post.body}}
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>

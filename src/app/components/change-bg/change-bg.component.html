@@ -1,0 +1,30 @@
+ <!-- Button trigger modal -->
+ <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    BG
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ingrese un color en Hexadecimal para cambiar el color de Fondo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form [formGroup]="changeBackground" (ngSubmit)="cambiarColorFondos()">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Ej. #F88256"
+              minlength="4" maxlength="7" required=""
+              pattern="[#]{1}[A-fa-f0-9]+"
+              formControlName="background" aria-label="background">
+              <button class="btn btn-primary" type="submit" [disabled]="!changeBackground.valid">Aplicar Tema</button>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
