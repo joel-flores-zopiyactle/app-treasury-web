@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AuthService {
 
-  url = 'http://localhost:3000/api/1.0/user';
+  url = 'https://api-user-app-2021.herokuapp.com/api/1.0/user';
   //private showSingOut:boolean = false;
   @Output() showSingOut = new EventEmitter<boolean>();
   @Output() chageBg = new EventEmitter<string>();
