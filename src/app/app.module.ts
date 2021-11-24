@@ -8,13 +8,17 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ChangeBgComponent } from './components/change-bg/change-bg.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
+import { IndexComponent } from './page/index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     FooterComponent,
-    ChangeBgComponent
+    ChangeBgComponent,
+    PageNotFoundComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
